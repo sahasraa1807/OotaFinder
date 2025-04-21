@@ -1,21 +1,22 @@
 import React, { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-import "../styles/Logoscreen.css"; // Importing the CSS for the Logo screen
+import "../styles/Logoscreen.css";
+import Logo from "../assets/Logo.png"; 
 
 const LogoScreen = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
-    // After 3 seconds, navigate to the home page
-    setTimeout(() => {
+    const timer = setTimeout(() => {
       navigate("/home");
     }, 3000);
+    return () => clearTimeout(timer);
   }, [navigate]);
 
   return (
     <div className="logo-screen">
       <img
-        src="/logo.png" // Ensure the logo is in the public folder
+        src={Logo} 
         alt="Oota Finder Logo"
         className="logo"
       />

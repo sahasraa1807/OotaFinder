@@ -1,12 +1,14 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import "../styles/Home.css"; 
+import SuggestSpot from "./SuggestSpot";
+
 
 const Home = () => {
   const navigate = useNavigate();
 
   const handleCategoryClick = (category) => {
-    navigate(`/category/${category}`);
+    navigate(`/category/${category}`, { state: { category } });
   };
 
   return (
@@ -39,6 +41,21 @@ const Home = () => {
         >
           Budget-Friendly Hotels
         </div>
+        <div className="category-card" onClick={() => navigate("/toobrokemood")}>
+          💸 Too Broke Mode
+        </div>
+      </div>
+
+      {/* Add SuggestSpot form here */}
+      <div className="suggest-spot-section">
+        <h2>Got a great spot? Suggest it here!</h2>
+        <SuggestSpot /> {/* Rendering the SuggestSpot form */}
+      </div>
+      <div
+        className="category-card"
+        onClick={() => navigate("/viewsuggestions")}
+      >
+        📋 View Suggested Spots
       </div>
     </div>
   );

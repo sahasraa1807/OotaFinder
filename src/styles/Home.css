@@ -22,7 +22,6 @@ html, body {
   box-sizing: border-box;
 }
 
-
 h1 {
   font-size: 3rem;
   color: #dc2626;
@@ -69,6 +68,81 @@ h1 {
 }
 
 /* Animation for category cards */
+@keyframes floatIn {
+  0% {
+    transform: scale(0.95);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* SuggestSpot Section */
+.suggest-spot-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #fff;
+  padding: 2rem;
+  margin-top: 4rem;
+  border-radius: 1.5rem;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 800px;
+  animation: floatIn 0.6s ease forwards;
+}
+
+.suggest-spot-section h2 {
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 2rem;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* Suggestion Form Styling */
+.suggest-wrapper form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  width: 100%;
+}
+
+.suggest-wrapper input,
+.suggest-wrapper textarea {
+  padding: 1rem;
+  font-size: 1rem;
+  border-radius: 0.75rem;
+  border: 2px solid #fcd34d;
+  background-color: #fafafa;
+  width: 100%;
+  transition: border-color 0.3s ease;
+}
+
+.suggest-wrapper input:focus,
+.suggest-wrapper textarea:focus {
+  outline: none;
+  border-color: #f59e0b;
+}
+
+.suggest-wrapper button {
+  padding: 1rem;
+  background-color: #fcd34d;
+  border: none;
+  border-radius: 0.75rem;
+  color: white;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.suggest-wrapper button:hover {
+  background-color: #f59e0b;
+}
+
+/* Animation for SuggestSpot form */
 @keyframes floatIn {
   0% {
     transform: scale(0.95);
