@@ -1,16 +1,55 @@
-<<<<<<< HEAD
-# React + Vite
+# 🍽️ Oota Finder – Bengaluru's Ultimate Food Discovery App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Oota Finder** is a food discovery web application built with **React.js**, designed specifically to help users in **Bengaluru** explore the best local eateries across different categories. Whether you're craving **South Indian delights**, **North Indian meals**, a **quick dosa fix**, or looking for **budget-friendly spots**, Oota Finder has you covered — even when you're in **Too Broke Mode**!
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Live Preview
 
-## Expanding the ESLint configuration
+🔗 [Check the deployed site here](vermillion-douhua-660145.netlify.app)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-=======
-# Oota-finder
->>>>>>> e00616d4f5c490c37219f2b14b998f875b7ad7d4
+---
+
+## 📖 Project Description
+
+Oota Finder provides a user-friendly platform to explore handpicked food joints in Bengaluru using data from a **demo API**. The platform is neatly categorized to help users quickly find places based on their current cravings, budget, or preference.
+
+### 🔹 Key Features:
+
+- 🥘 **Category-Based Listings**
+  - **South Indian Food**
+  - **North Indian Food**
+  - **Best Dosa Points**
+  - **Budget-Friendly Hotels**
+  - **Too Broke Mode** (Free or ultra-low-cost eats)
+
+- 📝 **User Suggestion Form**
+  - Visitors can suggest their favorite local food places via a form.
+  - Input validation ensures clean and user-friendly submissions.
+
+- ⚡ **Demo API Integration**
+  - Fetches hotel/restaurant data dynamically.
+  - Mock data used for showcasing backend behavior.
+
+- 🎨 **Responsive UI with Custom Styling**
+  - Clean layout
+  - Custom CSS (no frameworks like Tailwind or Bootstrap)
+  - Subtle animations for a modern feel
+
+---
+
+## 🛠️ Tech Stack
+
+| Tech            | Use                        |
+|-----------------|----------------------------|
+| React.js (Vite) | App structure and UI       |
+| React Router    | Page routing/navigation    |
+| Context API     | Global state management    |
+| Custom CSS      | Styling and layout         |
+| Demo API        | Restaurant data handling   |
+| Git & GitHub    | Version control            |
+| Netlify         | Deployment                 |
+
+---
+
+
